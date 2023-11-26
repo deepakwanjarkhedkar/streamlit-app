@@ -1,9 +1,9 @@
 import streamlit as st
 from langchain.llms import OpenAI
 
-st.title('🦜🔗 Quickstart App')
+st.title('Zelite AI App')
 
-openai_api_key = st.sidebar.text_input('OpenAI API Key')
+openai_api_key = st.sidebar.text_input('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')
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
